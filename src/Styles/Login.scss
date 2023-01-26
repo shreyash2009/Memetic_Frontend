@@ -1,0 +1,10 @@
+.LoginSection{
+    width: 100vw;
+    height: 100vh;
+    background-color: red($color: #000000);
+    display: flex;
+    justify-content: center;
+    .FormContainer{
+        background-color: rgb(248, 149, 57);
+    }
+}

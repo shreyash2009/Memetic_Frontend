@@ -1,0 +1,10 @@
+.LoginSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: 0;
+  display: flex;
+  justify-content: center;
+}
+.LoginSection .FormContainer {
+  background-color: rgb(248, 149, 57);
+}/*# sourceMappingURL=Login.css.map */

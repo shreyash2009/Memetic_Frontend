@@ -1,0 +1,136 @@
+
+  
+#Header{
+    background-color: #FFDD09;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem ;
+    width: 100vw;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 999;
+    box-shadow: 2px 2px 3px 2px rgb(249, 240, 137);
+    .logo{
+        font-weight: 700;
+        font-size: 28px;
+        font-family:  "Poppins", 'sans-serif';
+        letter-spacing: 4px;
+
+        .LogoBlack{
+            color: black;
+        }
+        .LogoWhite{
+            color: white;
+        }
+    }
+
+    .Nav_links{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+        margin: 1rem 0;
+        font-family: Poppins;
+        .NavLink{
+            letter-spacing: 1px;
+            margin: 2px;
+            list-style: none;
+            font-size: 18px;
+            font-weight: 500;
+            & a{
+                text-decoration: none;
+                color: black;
+                position: relative;
+                transition: all 0.3s ease-in;
+            }
+
+            .searchBox{
+                .search{
+                    border: 1px solid rgb(37, 37, 37);
+                    color: black;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    padding: 6px 8px;
+                    font-size: 15px;
+                    &:focus{
+                        outline: none;
+
+                    }
+                }
+            }
+            
+        }
+
+        
+    }
+
+    .Burger{
+        font-size: 1.8rem;
+        display: none;
+        transition: all 0.3s ease-in;
+    }
+}
+
+
+//responsive code
+@media (max-width: 920px) {
+    #Header{
+        padding: 1rem 0.8rem;
+    }
+    .NavLink {
+      display: none;
+    }
+    #Header .Burger {
+      display: block;
+    //   font-size: 8rem;
+    }
+  }
+  
+
+.resNav{
+    position: fixed;
+    top: -18rem;
+    left: 0;
+    width: 100vw;
+    padding: 0.6rem 0 0.2rem 0;
+    background-color: rgba(255, 239, 169, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+    transition: all 0.3s ease-in-out;
+    z-index: 998;
+    &.show{
+        top:4rem;
+    }
+    .resLinks{
+        margin: auto;
+        width: 100%;
+        background-color: rgba(203, 203, 239, 0);
+        text-align: center;
+        padding: 4px 0 6px 0 ;
+        .resLink{
+            list-style: none;
+            margin-bottom: 6px;
+            font-size: large;
+            font-weight: 400;
+            transition: all 0.3s ease-in-out;
+            color: black;
+            &:hover{
+                text-decoration: underline;
+            }
+            .resSearchBox{
+                input{
+                    width: 13rem;
+                    border-radius: 12px;
+                    outline: none;
+                    border: 1px solid grey;
+                    padding: 2px 8px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
