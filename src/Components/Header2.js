@@ -4,7 +4,6 @@ import { GiHamburgerMenu , GiExitDoor,GiTireIronCross} from "react-icons/gi";
 import Dropdown from "react-bootstrap/Dropdown";
 import ResNav from "./ResNav";
 import "../Styles/Header.css";
-import logo from '../Assets/logo2.jpg'
 import { useSelector, useDispatch } from "react-redux";
 import { setLogout } from "../Redux/Features/authSlice";
 import { searchMemes } from "../Redux/Features/memeSlice";

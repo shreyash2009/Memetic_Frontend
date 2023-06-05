@@ -29,7 +29,7 @@ const Dashboard = () => {
         if (userId) {
           dispatch(getMemesByUser(userId));
         }
-      }, [userId]);
+      }, [userId, dispatch]);
       
       const excerpt = (str) => {
         if (str.length > 40) {

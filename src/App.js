@@ -20,7 +20,7 @@ const App = () => {
 
   useEffect(()=>{
     dispatch(setUser(user))
-  },[]);
+  },[dispatch, user]);
   return (
     <div>
       <Header2/>

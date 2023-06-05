@@ -23,13 +23,13 @@ const SingleMeme = () => {
 
   useEffect(() => {
     tags && dispatch(getRelatedMemes(tags));
-  }, [tags]);
+  }, [tags, dispatch]);
   useEffect(() => {
     if (id) {
       dispatch(getMeme(id));
     }
     // console.log(meme)
-  }, [id]);
+  }, [id, dispatch]);
 
     if(loading){
       <Loader/>

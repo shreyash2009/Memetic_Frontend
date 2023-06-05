@@ -1,16 +1,12 @@
 import React from "react";
 import {
   MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
+
   MDBCardImage,
   MDBCardGroup,
-  MDBBtn,
   MDBIcon,
   MDBTooltip,
   MDBCardHeader,
-  MDBRow
 } from "mdb-react-ui-kit";
 import { AiOutlineLike,AiFillLike } from "react-icons/ai";
 import { Link } from "react-router-dom";

@@ -26,7 +26,7 @@ const TagMemes = () => {
   
   useEffect(()=>{
     dispatch(getMemesByTag(tag))
-  }, [tag])
+  }, [tag, dispatch])
 
 
   if(loading){

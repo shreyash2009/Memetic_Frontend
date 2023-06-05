@@ -7,16 +7,16 @@ const Footer = () => {
   return (
     <footer className="footerSection">
       <div className="icons">
-        <a href="https://www.instagram.com/shreyash_20.09/" target="_blank" className="icon instagram">
+        <a href="https://www.instagram.com/shreyash_20.09/"  rel="noreferrer" target="_blank" className="icon instagram">
           <BsInstagram className="insta ri" />
         </a>
-        <a href="https://github.com/shreyash2009" target="_blank" className="icon Github">
+        <a href="https://github.com/shreyash2009" target="_blank"  rel="noreferrer" className="icon Github">
           <BsGithub className="Git ri" />
         </a>
-        <a href="https://www.linkedin.com/in/shreyash-chaple-2b45aa213/" target="_blank" className="icon Linkedin">
+        <a href="https://www.linkedin.com/in/shreyash-chaple-2b45aa213/"  rel="noreferrer" target="_blank" className="icon Linkedin">
           <BsLinkedin className="Li ri" />
         </a>
-        <a href="mailto:shreyashchaple786oji@gmail.com" target="_blank" className="icon Mail">
+        <a href="mailto:shreyashchaple786oji@gmail.com" target="_blank"  rel="noreferrer" className="icon Mail">
           <SiGmail className="Gmail ri" />
         </a>
       </div>

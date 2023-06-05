@@ -15,7 +15,7 @@ const Home = () => {
  
   useEffect(()=>{
     dispatch(getMemes())
-  },[])
+  },[dispatch])
   
 
   if(loading){

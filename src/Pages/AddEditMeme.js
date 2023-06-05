@@ -4,7 +4,6 @@ import {
   MDBCardBody,
   MDBValidation,
   MDBBtn,
-  MDBInput, MDBValidationItem
 } from "mdb-react-ui-kit";
 import ChipInput from "material-ui-chip-input";
 import FileBase from "react-file-base64";
@@ -13,7 +12,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import bg2 from '../Assets/memebg2.jpg'
 import { createMeme, updateMeme } from "../Redux/Features/memeSlice";
-import { Backdrop } from "@material-ui/core";
 import Footer from "../Components/Footer";
 
 
@@ -39,7 +37,7 @@ const AddEditMeme = () => {
         const singleMeme = userMemes.find((meme)=> meme._id === id)
         setMemeData({...singleMeme})
       }
-    },[id])
+    },[id, userMemes])
 
     useEffect(()=>{
         error && toast.error(error);

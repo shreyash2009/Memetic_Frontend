@@ -1,7 +1,6 @@
 import {React,useState} from 'react'
-import { BsPerson,BsSearch } from "react-icons/bs";
+import { BsPerson } from "react-icons/bs";
 import { GiExitDoor } from "react-icons/gi";
-import {Link} from "react-router-dom"
 import "../Styles/Header.css";
 import { useSelector, useDispatch } from "react-redux";
 import { setLogout } from "../Redux/Features/authSlice";
