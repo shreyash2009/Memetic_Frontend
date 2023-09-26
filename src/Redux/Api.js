@@ -1,15 +1,7 @@
 import axios from 'axios';
+import config from '../Utils/config';
 
-
-const API = axios.create({baseURL:"https://memetic-server-2.vercel.app"});
-
-// const devEnv = process.env.NODE_ENV !== "production";
-
-// const { REACT_APP_DEV_API, REACT_APP_PROD_API } = process.env;
-
-// const API = axios.create({
-//   baseURL: `${devEnv ? REACT_APP_DEV_API : REACT_APP_PROD_API}`,
-// });
+const API = axios.create({baseURL:`${config?.backendUrl}`});
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem("profile")) {
